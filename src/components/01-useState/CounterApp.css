@@ -1,5 +1,7 @@
 body {
   padding: 70px;
-  background-color: #333;
-  color: whitesmoke;
+}
+
+button {
+  margin-right: 3px;
 }
