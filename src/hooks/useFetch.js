@@ -1,11 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const useFetch = ({ url }) => {
+  const isMounted = useRef(true);
   const [state, setState] = useState({
     data: null,
     error: null,
     loading: true,
   });
+
+  useEffect(() => {
+    return () => {
+      isMounted.current = false;
+    };
+  }, []);
 
   useEffect(() => {
     setState({
@@ -15,13 +22,14 @@ const useFetch = ({ url }) => {
     });
     fetch(url)
       .then((res) => res.json())
-      .then((data) =>
-        setState({
-          data,
-          error: null,
-          loading: false,
-        })
-      )
+      .then((data) => {
+        if (isMounted.current)
+          setState({
+            data,
+            error: null,
+            loading: false,
+          });
+      })
       .catch({
         data: null,
         error: true,
