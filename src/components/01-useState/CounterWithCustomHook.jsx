@@ -3,12 +3,9 @@ import useCounter from 'hooks/useCounter';
 import './CounterApp.css';
 
 const CounterWithCustomHook = () => {
-  const {
-    state: counter,
-    increment,
-    decrement,
-    reset,
-  } = useCounter({ initialState: 100 });
+  const { counter, increment, decrement, reset } = useCounter({
+    initialState: 100,
+  });
 
   return (
     <>
