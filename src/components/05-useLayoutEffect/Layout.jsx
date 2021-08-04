@@ -41,7 +41,7 @@ const Layout = () => {
           </button>
         </div>
 
-        <pre>{JSON.stringify(boxSize, null, 3)}</pre>
+        <pre className="mt-3">{JSON.stringify(boxSize, null, 3)}</pre>
       </section>
     </>
   );
