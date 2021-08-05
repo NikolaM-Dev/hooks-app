@@ -12,14 +12,15 @@ import ReactDOM from 'react-dom';
 // import Layout from 'components/05-useLayoutEffect/Layout';
 // import Memorize from 'components/06-memos/Memorize';
 // import MemoHook from 'components/06-memos/MemoHook';
-import CallbackHook from 'components/06-memos/CallbackHook';
+// import CallbackHook from 'components/06-memos/CallbackHook';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import Father from 'components/07-tarea-memo/Father';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CallbackHook />
+    <Father />
   </React.StrictMode>,
   document.getElementById('root')
 );
