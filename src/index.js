@@ -14,14 +14,15 @@ import ReactDOM from 'react-dom';
 // import MemoHook from 'components/06-memos/MemoHook';
 // import CallbackHook from 'components/06-memos/CallbackHook';
 // import Father from 'components/07-tarea-memo/Father';
+// import TodoApp from 'components/08-useReducer/TodoApp';
+import MainApp from 'components/09-useContext/MainApp';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
-import TodoApp from 'components/08-useReducer/TodoApp';
+// import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <TodoApp />
+    <MainApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
