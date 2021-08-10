@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on <MultipleCustomHooks /> component should show <MultipleCustomHooks /> correctly 1`] = `
+<div>
+  <h1>
+    BreakingBad Quotes
+  </h1>
+  <hr />
+  <div
+    className="alet alert-info text-center py-3"
+  >
+    Loading...
+  </div>
+</div>
+`;
