@@ -20,6 +20,7 @@ const useFetch = ({ url }) => {
       error: null,
       loading: true,
     });
+
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -30,11 +31,13 @@ const useFetch = ({ url }) => {
             loading: false,
           });
       })
-      .catch({
-        data: null,
-        error: true,
-        loading: false,
-      });
+      .catch(() =>
+        setState({
+          data: null,
+          error: 'The information could not be loaded',
+          loading: false,
+        })
+      );
   }, [url]);
 
   return state;
