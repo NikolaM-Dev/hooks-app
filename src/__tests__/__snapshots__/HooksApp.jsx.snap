@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on <HooksApp /> should show <HooksApp /> correctly 1`] = `
+<Fragment>
+  <h1>
+    Hooks App
+  </h1>
+</Fragment>
+`;

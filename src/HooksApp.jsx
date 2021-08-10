@@ -1,5 +1,3 @@
-// import PropTypes from 'prop-types';
-
 const HooksApp = (props) => {
   return (
     <>
@@ -7,7 +5,5 @@ const HooksApp = (props) => {
     </>
   );
 };
-
-// HooksApp.propTypes = {	};
 
 export default HooksApp;
