@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import AppRouter from './AppRouter';
+import AppRouter from './components/AppRouter';
 import UserContext from './UserContext';
 
 const MainApp = () => {

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import UserContext from './UserContext';
+import UserContext from '../UserContext';
 
 const LoginScreen = () => {
   const { setUser } = useContext(UserContext);
