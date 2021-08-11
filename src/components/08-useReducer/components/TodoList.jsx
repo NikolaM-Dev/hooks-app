@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import TodoListItem from './TodoListItem';
 
 const TodoList = ({ todos, handleToggle, handleDelete }) => {
@@ -7,13 +9,19 @@ const TodoList = ({ todos, handleToggle, handleDelete }) => {
         <TodoListItem
           handleDelete={handleDelete}
           handleToggle={handleToggle}
-          i={i}
+          index={i}
           key={todo.id}
           todo={todo}
         />
       ))}
     </ul>
   );
+};
+
+TodoList.propTypes = {
+  todos: PropTypes.array.isRequired,
+  handleToggle: PropTypes.func.isRequired,
+  handleDelete: PropTypes.func.isRequired,
 };
 
 export default TodoList;

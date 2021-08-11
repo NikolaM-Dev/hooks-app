@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import useForm from 'hooks/useForm';
 
 const AddTodo = ({ handleAddTodo }) => {
@@ -40,6 +42,10 @@ const AddTodo = ({ handleAddTodo }) => {
       </form>
     </>
   );
+};
+
+AddTodo.propTypes = {
+  handleAddTodo: PropTypes.func.isRequired,
 };
 
 export default AddTodo;

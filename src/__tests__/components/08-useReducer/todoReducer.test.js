@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 
-import todoReducer from 'components/08-useReducer/todoReducer';
 import demoTodos from '__fixtures__/demoTodos';
+import todoReducer from 'components/08-useReducer/todoReducer';
 
 describe('Tests on todoReducer', () => {
   const todoID = 1;

@@ -7,7 +7,7 @@ const demoTodos = [
   {
     id: 2,
     desc: 'Learn Mongo',
-    done: false,
+    done: true,
   },
 ];
 
