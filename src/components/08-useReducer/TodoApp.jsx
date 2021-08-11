@@ -31,7 +31,7 @@ const TodoApp = () => {
 
   return (
     <>
-      <h1>Todo App ({todos.length})</h1>
+      <h1>Todo App {todos.length > 0 && `(${todos.length})`}</h1>
       <hr />
 
       <div className="row">
